@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import pallete from './pallete';
+import Pallete from './Pallet';
 
 function App() {
   return (
-      
+      <Pallete/>
   );
 }
 
