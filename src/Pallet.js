@@ -1,17 +1,21 @@
-import { Slider } from "@mui/material";
+import { colors, Slider } from "@mui/material";
 
-function palleteChange({defaultValue}) {
-    if (defaultValue >= 30) {
-        alert("HELLO!");
-    }
+function paletteChange({ defaulta }) {
+    defaulta = Pallete({colora});
+    console.log(defaulta);
 }
 
-function Pallete() {
+
+paletteChange({});
+
+function Pallete({colora}) {
     return (
         <div className="container">
-            <Slider defaultValue={0} aria-label="Default" valueLabelDisplay="auto" onChange={palleteChange}/>
+            <Slider defaultValue={0} colora={defaultValue.value} aria-label="Default" valueLabelDisplay="auto"/>
         </div>
     );
 }
+
+console.log(Pallete.colora);
 
 export default Pallete;
