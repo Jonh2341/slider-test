@@ -1,15 +1,15 @@
 import { Slider } from "@mui/material";
 
-function colorChange({Slider, container}) {
-    if (Slider.value >= 30) {
-        container.style.backgroundColor = "red";
+function palleteChange({defaultValue}) {
+    if (defaultValue >= 30) {
+        alert("HELLO!");
     }
 }
 
 function Pallete() {
     return (
         <div className="container">
-            <Slider defaultValue={0} aria-label="Default" onChange={colorChange} valueLabelDisplay="auto" />
+            <Slider defaultValue={0} aria-label="Default" valueLabelDisplay="auto" onChange={palleteChange}/>
         </div>
     );
 }
