@@ -1,21 +1,15 @@
-import { colors, Slider } from "@mui/material";
+import { Slider } from "@mui/material";
 
-function paletteChange({ defaulta }) {
-    defaulta = Pallete({colora});
-    console.log(defaulta);
+function Pallete() {
+  return (
+    <div className="container">
+      <Slider
+        defaultValue={colora}
+        aria-label="Default"
+        valueLabelDisplay="auto"
+      />
+    </div>
+  );
 }
-
-
-paletteChange({});
-
-function Pallete({colora}) {
-    return (
-        <div className="container">
-            <Slider defaultValue={0} colora={defaultValue.value} aria-label="Default" valueLabelDisplay="auto"/>
-        </div>
-    );
-}
-
-console.log(Pallete.colora);
 
 export default Pallete;
